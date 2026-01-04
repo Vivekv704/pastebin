@@ -1,6 +1,6 @@
 # Pastebin Lite
 
-A simple pastebin application with TTL and view limits.
+Pastebin-Lite is a lightweight full-stack web application that allows users to create and share text pastes via a unique URL. Each paste can optionally expire based on time (TTL) or a maximum number of views, after which it becomes unavailable. The application is built with a clean, production-ready architecture, supports deterministic time-based testing, and uses persistent storage to ensure reliability across requests.
 
 ## Architecture
 
