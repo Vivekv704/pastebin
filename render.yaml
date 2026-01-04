@@ -3,6 +3,7 @@ services:
     name: pastebin-lite-backend
     env: node
     plan: free
+    rootDir: backend
     buildCommand: npm ci && npm run build && npx prisma generate && npx prisma migrate deploy
     startCommand: npm start
     healthCheckPath: /api/healthz
