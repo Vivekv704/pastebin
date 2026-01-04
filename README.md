@@ -8,6 +8,20 @@ Pastebin-Lite is a lightweight full-stack web application that allows users to c
 - **Backend**: Node.js + Express + TypeScript (deployed on Render)
 - **Database**: PostgreSQL (NeonDB)
 
+┌─────────────┐        HTTP        ┌────────────────────┐
+│   Browser   │ ────────────────▶ │ Next.js App Router  │
+│ (React UI)  │                   │  (API + UI)        │
+└─────────────┘                   └─────────┬──────────┘
+                                              │
+                                              │ SQL over TCP
+                                              ▼
+                                      ┌─────────────────┐
+                                      │ PostgreSQL DB   │
+                                      │ (persistent)   │
+                                      └─────────────────┘
+
+
+
 ## Deployment
 
 ### Backend (Render)
