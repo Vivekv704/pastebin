@@ -98,6 +98,7 @@ Thumbs.db
 ./vscode
 deploy.md
 DEPLOYMENT_COMMANDS.md
+PRISMA_FIX.md
 
 # Prisma
 prisma/migrations/dev.db*

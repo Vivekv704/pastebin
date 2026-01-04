@@ -11,8 +11,10 @@
     "test:watch": "jest --watch",
     "migrate": "prisma migrate dev",
     "migrate:deploy": "prisma migrate deploy",
-    "generate": "prisma generate",
+    "migrate:reset": "prisma migrate reset",
     "db:push": "prisma db push",
+    "db:deploy": "prisma db push || prisma migrate deploy",
+    "generate": "prisma generate",
     "postinstall": "prisma generate"
   },
   "keywords": [
